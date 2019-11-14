@@ -136,14 +136,13 @@ a.schedule__link--red {
 }
 
 .times > div {
-    border-left-width: 2px;
 }
 
-.days {
+.grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 60px repeat(7, 1fr);
+    grid-template-rows: 36px repeat(8, 1fr);
     font-size: 13px;
-    position: relative;
 }
 
 .grid__head {
@@ -151,45 +150,40 @@ a.schedule__link--red {
     background: #fafafa;
     color: #bababa;
     font-weight: bold;
+    position: sticky;
+    z-index: 1;
 }
 
-.days > div, .times > div {
-    border: 2px solid #ececec;
-    border-bottom-width: 0;
-    padding: 10px 5px;
-    height: 98px;
-    min-width: 155px;
+.grid__head:not(.grid__time) {
+    top: 0;
 }
 
-.days > div {
-    border-left-width: 0;
+.grid__time:first-child {
+    top: 0;
+    z-index: 2;
 }
 
-.days > div:nth-child(7n) {
-    border-right-width: 0;
-}
-
-.days {
-    border-right: 2px solid #ececec;
-}
-
-.days > div:nth-last-child(-n+7), .times > div:last-child {
-    border-bottom-width: 2px;
-    scroll-snap-align: center;
-}
-
-.days > div.grid__head, .times > div:first-child {
-    height: 36px;
-}
-
-.times > div {
+.grid__time {
+    left: 0;
     display: flex;
-    min-width: auto;
 }
 
-.times > div > span {
+.grid__time > span {
     margin: auto;
 }
+
+.grid > div {
+    border: 1px solid #ececec;
+    padding: 10px 5px;
+}
+
+.grid > div:nth-child(8n) {
+}
+
+.grid {
+    border: 1px solid #ececec;
+}
+
 
 .item {
     position: relative;
@@ -256,16 +250,30 @@ a.schedule__link--red {
 
 @media screen and (max-width: 1176px) {
 
-    .days {
+    .grid {
         overflow-x: scroll;
+        max-height: 90vh;
+    }
+
+    .item {
+        min-width: 160px;
+        min-height: 100px;
     }
 }
 
 @media screen and (max-width: 800px) {
 
     .tabs {
-        width: auto;
-        overflow-x: scroll;
+        display: none;
+    }
+
+    .tabs_select {
+        display: block;
+    }
+
+    #select {
+        display: block;
+        width: 100%;
     }
 }
 
