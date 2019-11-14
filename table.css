@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 .wrapper {
     max-width: 1200px;
     padding: 10px;
@@ -151,11 +155,14 @@ a.schedule__link--red {
 
 .days > div, .times > div {
     border: 2px solid #ececec;
-    border-left-width: 0;
     border-bottom-width: 0;
     padding: 10px 5px;
     height: 98px;
     min-width: 155px;
+}
+
+.days > div {
+    border-left-width: 0;
 }
 
 .days > div:nth-child(7n) {
