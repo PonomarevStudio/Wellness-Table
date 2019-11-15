@@ -252,6 +252,10 @@ a.schedule__link--red {
     display: none;
 }
 
+.tabs_select select {
+    font-size: 16px;
+}
+
 @media screen and (max-width: 1176px) {
 
     .grid {
