@@ -248,6 +248,10 @@ a.schedule__link--red {
     margin-right: 8px;
 }
 
+.tabs_select {
+    display: none;
+}
+
 @media screen and (max-width: 1176px) {
 
     .grid {
@@ -272,7 +276,6 @@ a.schedule__link--red {
     }
 
     #select {
-        display: block;
         width: 100%;
     }
 }
