@@ -256,7 +256,7 @@ a.schedule__link--red {
     font-size: 16px;
 }
 
-.table-open-link {
+.table-open-link, .table-close-link {
     display: none;
 }
 
