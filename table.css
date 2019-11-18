@@ -297,7 +297,7 @@ a.schedule__link--red {
     }
 
     body:target .levels {
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
 
     .table-close-link {
@@ -315,6 +315,7 @@ a.schedule__link--red {
         text-decoration: unset;
         color: transparent;
         text-shadow: 0 0 0 #ffffff;
+        order: 1;
     }
 
     .table-open-link {
