@@ -264,7 +264,8 @@ a.schedule__link--red {
 
     .grid {
         overflow-x: scroll;
-        max-height: 90vh;
+        max-height: 55vh;
+        max-width: 100vw;
         display: none;
     }
 
