@@ -8,7 +8,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="table.css">
 </head>
-<body>
+<body id="table">
 <div class="wrapper">
 
     <h1>Расписание занятий</h1>
@@ -21,471 +21,480 @@
 
     <p><a href="" class="schedule__link--red">Записаться на персональную тренировку</a></p>
 
-    <div class="tabs">
-        <div class="tab">
-            <div class="tab__title">Все</div>
-            <div class="tab__date">22 - 26 июня</div>
-        </div>
-        <div class="tab active">
-            <div class="tab__title">Групповые занятия</div>
-            <div class="tab__date">22 - 26 июня</div>
+    <div class="table-wrapper">
+
+        <div class="tabs">
+            <div class="tab">
+                <div class="tab__title">Все</div>
+                <div class="tab__date">22 - 26 июня</div>
+            </div>
+            <div class="tab active">
+                <div class="tab__title">Групповые занятия</div>
+                <div class="tab__date">22 - 26 июня</div>
+            </div>
+
+            <div class="tab">
+                <div class="tab__title">Детские группы</div>
+                <div class="tab__date">22 - 26 июня</div>
+            </div>
+
+            <div class="tab">
+                <div class="tab__title">Единоборства</div>
+                <div class="tab__date">22 - 26 июня</div>
+            </div>
+
+            <div class="tab">
+                <div class="tab__title">Аквааэробика</div>
+                <div class="tab__date">22 - 26 июня</div>
+            </div>
         </div>
 
-        <div class="tab">
-            <div class="tab__title">Детские группы</div>
-            <div class="tab__date">22 - 26 июня</div>
+        <div class="tabs_select">
+            <p><label for="select">22 - 26 июня</label></p>
+            <p>
+                <select id="select">
+                    <option value="all">Все</option>
+                    <option value="groups">Групповые занятия</option>
+                    <option value="kids">Детские группы</option>
+                    <option value="fight">Единоборства</option>
+                    <option value="aqua">Аквааэробика</option>
+                </select>
+            </p>
         </div>
 
-        <div class="tab">
-            <div class="tab__title">Единоборства</div>
-            <div class="tab__date">22 - 26 июня</div>
+        <div class="grid">
+            <div class="grid__head grid__time"></div>
+            <div class="grid__head">Понедельник</div>
+            <div class="grid__head">Вторник</div>
+            <div class="grid__head">Среда</div>
+            <div class="grid__head">Четверг</div>
+            <div class="grid__head">Пятница</div>
+            <div class="grid__head">Суббота</div>
+            <div class="grid__head">Воскресенье</div>
+
+            <div class="grid__head grid__time"><span>07:30</span></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Antigravity yoga</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Нелли</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--high">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Детские единоборства</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал БИ</span>
+                </div>
+                <div class="item__name">Дима</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="grid__head grid__time"><span>08:00</span></div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Bums</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Юлия Д.</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Swimming kids</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Юлия С.</div>
+                <div class="item__color item__color--start">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+
+
+            <div class="grid__head grid__time"><span>09:00</span></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Swimming</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Валерий</div>
+                <div class="item__color item__color--start">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Yoga</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 2</span>
+                </div>
+                <div class="item__name">Виктор</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="grid__head grid__time"><span>12:30</span></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Aqua Power</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Юлия Д.</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Fitness Kids</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 2</span>
+                </div>
+                <div class="item__name">Юлия</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Единоборства</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал БИ</span>
+                </div>
+                <div class="item__name">Василий</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Stretch + Flexibilt</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--high">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Bums</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Митя</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="grid__head grid__time"><span>14:30</span></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Antigravity yoga</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Нелли</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--high">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Детские единоборства</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал БИ</span>
+                </div>
+                <div class="item__name">Дима</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="grid__head grid__time"><span>15:00</span></div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Bums</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Юлия Д.</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Swimming kids</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Юлия С.</div>
+                <div class="item__color item__color--start">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+
+
+            <div class="grid__head grid__time"><span>16:00</span></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Swimming</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Валерий</div>
+                <div class="item__color item__color--start">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Yoga</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 2</span>
+                </div>
+                <div class="item__name">Виктор</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Stretch + МФР</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="grid__head grid__time"><span>17:30</span></div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Aqua Power</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Бассейн</span>
+                </div>
+                <div class="item__name">Юлия Д.</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Fitness Kids</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 2</span>
+                </div>
+                <div class="item__name">Юлия</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+            <div class="item">
+                <div class="item__title">Единоборства</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал БИ</span>
+                </div>
+                <div class="item__name">Василий</div>
+                <div class="item__color item__color--medium">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Stretch + Flexibilt</div>
+                <div>
+                    <span>55 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Полина</div>
+                <div class="item__color item__color--high">
+                    <span></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__title">Bums</div>
+                <div>
+                    <span>45 мин</span>,
+                    <span>Зал 1</span>
+                </div>
+                <div class="item__name">Митя</div>
+                <div class="item__color item__color--any">
+                    <span></span>
+                </div>
+            </div>
         </div>
 
-        <div class="tab">
-            <div class="tab__title">Аквааэробика</div>
-            <div class="tab__date">22 - 26 июня</div>
+        <h4>Уровни нагрузки</h4>
+
+        <div class="levels">
+            <div class="levels__color levels__color--start">
+                <span></span>Начальный
+            </div>
+            <div class="levels__color levels__color--medium">
+                <span></span>Средний
+            </div>
+            <div class="levels__color levels__color--high">
+                <span></span>Высокий
+            </div>
+            <div class="levels__color levels__color--any">
+                <span></span>Любой
+            </div>
         </div>
+
+        <a class="table-close-link" href="#">❌</a>
+
     </div>
 
-    <div class="tabs_select">
-        <p><label for="select">22 - 26 июня</label></p>
-        <p>
-            <select id="select">
-                <option value="all">Все</option>
-                <option value="groups">Групповые занятия</option>
-                <option value="kids">Детские группы</option>
-                <option value="fight">Единоборства</option>
-                <option value="aqua">Аквааэробика</option>
-            </select>
-        </p>
-    </div>
+    <a class="table-open-link" href="#table">Нажмите чтобы открыть расписание ☞</a>
 
-    <div class="grid">
-        <div class="grid__head grid__time"></div>
-        <div class="grid__head">Понедельник</div>
-        <div class="grid__head">Вторник</div>
-        <div class="grid__head">Среда</div>
-        <div class="grid__head">Четверг</div>
-        <div class="grid__head">Пятница</div>
-        <div class="grid__head">Суббота</div>
-        <div class="grid__head">Воскресенье</div>
-
-        <div class="grid__head grid__time"><span>07:30</span></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Antigravity yoga</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Нелли</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--high">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Детские единоборства</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал БИ</span>
-            </div>
-            <div class="item__name">Дима</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-
-
-        <div class="grid__head grid__time"><span>08:00</span></div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Bums</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Юлия Д.</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Swimming kids</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Юлия С.</div>
-            <div class="item__color item__color--start">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-
-
-        <div class="grid__head grid__time"><span>09:00</span></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Swimming</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Валерий</div>
-            <div class="item__color item__color--start">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Yoga</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 2</span>
-            </div>
-            <div class="item__name">Виктор</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-
-
-        <div class="grid__head grid__time"><span>12:30</span></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Aqua Power</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Юлия Д.</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Fitness Kids</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 2</span>
-            </div>
-            <div class="item__name">Юлия</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Единоборства</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал БИ</span>
-            </div>
-            <div class="item__name">Василий</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Stretch + Flexibilt</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--high">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Bums</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Митя</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-
-
-        <div class="grid__head grid__time"><span>14:30</span></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Antigravity yoga</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Нелли</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--high">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Детские единоборства</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал БИ</span>
-            </div>
-            <div class="item__name">Дима</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-
-
-        <div class="grid__head grid__time"><span>15:00</span></div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Bums</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Юлия Д.</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Swimming kids</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Юлия С.</div>
-            <div class="item__color item__color--start">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-
-
-        <div class="grid__head grid__time"><span>16:00</span></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Swimming</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Валерий</div>
-            <div class="item__color item__color--start">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Yoga</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 2</span>
-            </div>
-            <div class="item__name">Виктор</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Stretch + МФР</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-
-
-        <div class="grid__head grid__time"><span>17:30</span></div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Aqua Power</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Бассейн</span>
-            </div>
-            <div class="item__name">Юлия Д.</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Fitness Kids</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 2</span>
-            </div>
-            <div class="item__name">Юлия</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-        <div></div>
-        <div class="item">
-            <div class="item__title">Единоборства</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал БИ</span>
-            </div>
-            <div class="item__name">Василий</div>
-            <div class="item__color item__color--medium">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Stretch + Flexibilt</div>
-            <div>
-                <span>55 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Полина</div>
-            <div class="item__color item__color--high">
-                <span></span>
-            </div>
-        </div>
-        <div class="item">
-            <div class="item__title">Bums</div>
-            <div>
-                <span>45 мин</span>,
-                <span>Зал 1</span>
-            </div>
-            <div class="item__name">Митя</div>
-            <div class="item__color item__color--any">
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-    <h4>Уровни нагрузки</h4>
-
-    <div class="levels">
-        <div class="levels__color levels__color--start">
-            <span></span>Начальный
-        </div>
-        <div class="levels__color levels__color--medium">
-            <span></span>Средний
-        </div>
-        <div class="levels__color levels__color--high">
-            <span></span>Высокий
-        </div>
-        <div class="levels__color levels__color--any">
-            <span></span>Любой
-        </div>
-    </div>
 </div>
 
 </body>
