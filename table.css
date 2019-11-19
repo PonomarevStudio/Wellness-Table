@@ -151,6 +151,7 @@ a.schedule__link--red {
     color: #bababa;
     font-weight: bold;
     position: sticky;
+    position: -webkit-sticky;
     z-index: 1;
 }
 
